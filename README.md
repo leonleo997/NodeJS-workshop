@@ -1,5 +1,5 @@
 # NodeJS Course  
-Link: (course NodeJS)![https://www.udemy.com/understand-nodejs/]
+Link: [course NodeJS]!(https://www.udemy.com/understand-nodejs/)
 Philosophy: Don't imitate, understand!  
 Not just focus on what, but how and why
 ## Big words  
