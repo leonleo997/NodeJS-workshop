@@ -22,7 +22,10 @@ V8 Engine is the javascript engine (The core of NodeJS). NodeJS expand the javas
 **Module:** Reusable block of code.  
 **First-class function:** Everything you can do with other types, you can do with functions.  
 **Inheritance:** one object gets access to the properties and methods of another object.  
-**Prototype:** 
 **Prototype chain:** A sequence of objects connected to each other and I can access to any object in the chain.
 **Primitive:** A type of data that represents a single value.  
-**Scope:** Where in code you have access to particular variable or function.
+**Scope:** Where in code you have access to particular variable or function.  
+## Event and event Emitter  
+Event : something that has happening in our app that we can respond to. In node there are two types of events:
+    * System Events: They come from C++ core, exactly from libuv.
+    * Custome Events: They come inside javascript events. They are made by myself. It comes from Event Emiter.
