@@ -18,3 +18,11 @@ V8 Engine is the javascript engine (The core of NodeJS). NodeJS expand the javas
 ## Servers and clients
 **Server:** computer that is performing services. It does the work.  
 **Client:** Makes request to a server.  
+## Modules, exports and requires  
+**Module:** Reusable block of code.  
+**First-class function:** Everything you can do with other types, you can do with functions.  
+**Inheritance:** one object gets access to the properties and methods of another object.  
+**Prototype:** 
+**Prototype chain:** A sequence of objects connected to each other and I can access to any object in the chain.
+**Primitive:** A type of data that represents a single value.  
+**Scope:** Where in code you have access to particular variable or function.
