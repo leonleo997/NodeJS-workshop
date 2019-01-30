@@ -1,6 +1,10 @@
-var a = 1;
-var b = 2;
-b = b - 3 
-var c = a + b;
+var person = {
+    firstname: 'Yesid',
+    lastname: 'López',
+    greet: function() {
+        console.log('Hello, ', this.firstname, this.lastname);
+    }
+}
 
-console.log(c);
+person.greet();
+console.log(person['firstname']);
