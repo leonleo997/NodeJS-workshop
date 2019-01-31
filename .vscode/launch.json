@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/TheNodeCore\\app.js"
+            "program": "${workspaceFolder}/Events-and-Emitter\\app.js"
         }
     ]
 }
