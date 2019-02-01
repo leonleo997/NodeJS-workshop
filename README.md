@@ -10,7 +10,8 @@ Not just focus on what, but how and why
 **Ecmascript:** The standard javascript is based on. It says how Javascript should work. It is also known as the standard for Javascript.  
 **Javascript Engine:** A program that converts Javascript code into something the computer processor can understand.  
 **V8:** It is a Google's open source JavaScript written in C++.  
-**NodeJS:** It is a server technology.   
+**NodeJS:** It is a server technology.  
+**Abstract class:** a type of constructor that you never work directly with, but inherit from.     
 ## Foundamental Knowledge  
 V8 Engine is the javascript engine (The core of NodeJS). NodeJS expand the javascript code because you can write server code.  
 * The better you know Javascript, the better you know NodeJS.  
@@ -35,10 +36,23 @@ Event : something that has happening in our app that we can respond to. In node 
 **Non-blocking:** Doing other things without stopping your programming drom running. 
 ## Streams and Buffers  
 **Buffer:** A temporaly spot for data. It moves data from one place to another.
-**Stream:** A sequence of data made available over time. 
+**Stream:** A sequence of data made available over time. It is also seen like a sequence of pieces of data.
 **Binary data:** Data stored in binary (0s and 1s). Core of the math computers are based on.  
 **Character Set:** a representation of characters as numbers.  
 ## Buffers  
 It exists in Node because javascript didn't have good ways to deal with binary data. But in the ES6  version it is able to deal with it, just it is a new feature.  
-## Callbacks  
+## Files and modules  
+**Error first callback:** Callback take an error object as their first parameter.  
+## Streams  
+Data is split on chuncks and streamed.  
+Chunck: piece of data being sent through streams.  
+Streams are a kind of event emitters.  
+We can creat our own custom stream that extends from Stream.  
+0.
+If the stream is readable we can read information from the stream. If it is writable we can send information through it.  
+**Readable:** If the browser makes a request to the web server. The server receives the information.  
+**Writable:** When the web server sends a response to the browser.  
+## Pipe  
+It is the way to connect two streams by writing one stream what is beang read from another. It can be chain or connected.  
+**Method chaining:** a method returns an object so we can keep calling more methods.   
 
