@@ -27,5 +27,18 @@ V8 Engine is the javascript engine (The core of NodeJS). NodeJS expand the javas
 **Scope:** Where in code you have access to particular variable or function.  
 ## Event and event Emitter  
 Event : something that has happening in our app that we can respond to. In node there are two types of events:
-    * System Events: They come from C++ core, exactly from libuv.
-    * Custome Events: They come inside javascript events. They are made by myself. It comes from Event Emiter.
+    * System Events: They come from C++ core, exactly are managed for libuv.
+    * Custome Events: They come inside javascript events. They are made by myself. It comes from Event Emiter.  
+## Asynchronous code  
+**Callbacks:** A function passed to some other function which we assume that will be invoked in some point.  
+**Libuv:** Managed the task made in lower level. It makes a request to OS. It uses a queue for completed tasks. The most important thing is the event loop, it is a loop where the libuv is constantly checking the queue. The operating system puts into the queue tasks done, when the libuv checks that done task, it sends a callback to V8 the code that should be run when the task is done.  
+**Non-blocking:** Doing other things without stopping your programming drom running. 
+## Streams and Buffers  
+**Buffer:** A temporaly spot for data. It moves data from one place to another.
+**Stream:** A sequence of data made available over time. 
+**Binary data:** Data stored in binary (0s and 1s). Core of the math computers are based on.  
+**Character Set:** a representation of characters as numbers.  
+## Buffers  
+It exists in Node because javascript didn't have good ways to deal with binary data. But in the ES6  version it is able to deal with it, just it is a new feature.  
+## Callbacks  
+
