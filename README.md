@@ -55,4 +55,18 @@ If the stream is readable we can read information from the stream. If it is writ
 ## Pipe  
 It is the way to connect two streams by writing one stream what is beang read from another. It can be chain or connected.  
 **Method chaining:** a method returns an object so we can keep calling more methods.   
+## Http and being a web server  
+**Protocol:** A set of rules two sides agree on to use when communicating.  
+**Adress Port:** Once a computer recieves a packet, how it knows what program to send it to. 
+**Http:** Set of rules for data being transferred on the web. It says all the things that contains and the structure. It is composed by status, headers and body.  
+**MIME type:** It specifies the type of data being sent.  
+If we would like to improve the performance when we load a web page we can use ´pipes´ instead of end. For example:
+´´´javascript
+    var html = fs.readFileSync(__dirname + '/index.html', 'utf8');
+    res.end(html);
+´´´
+In the code above the index html file is loaded completely, but below is loaded by chuncks. It means that performance will improve:  
+´´´javascript
+    fs.createReadStream(__dirname + '/index.html', 'utf8').pipe(res);
+´´´
 
