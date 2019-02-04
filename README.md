@@ -60,13 +60,13 @@ It is the way to connect two streams by writing one stream what is beang read fr
 **Adress Port:** Once a computer recieves a packet, how it knows what program to send it to. 
 **Http:** Set of rules for data being transferred on the web. It says all the things that contains and the structure. It is composed by status, headers and body.  
 **MIME type:** It specifies the type of data being sent.  
-If we would like to improve the performance when we load a web page we can use ´pipes´ instead of end. For example:
-´´´javascript
+If we would like to improve the performance when we load a web page we can use `pipes` instead of end. For example:
+```javascript
     var html = fs.readFileSync(__dirname + '/index.html', 'utf8');
     res.end(html);
-´´´
+```
 In the code above the index html file is loaded completely, but below is loaded by chuncks. It means that performance will improve:  
-´´´javascript
+```javascript
     fs.createReadStream(__dirname + '/index.html', 'utf8').pipe(res);
-´´´
+```
 
