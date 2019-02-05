@@ -1,0 +1,12 @@
+body{
+    background: blue;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+h1 {
+    padding-top: 10%;
+    float: left;
+    width: 100%;
+    color: white;
+}
