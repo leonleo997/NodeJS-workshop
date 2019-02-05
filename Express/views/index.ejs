@@ -6,8 +6,19 @@
     <title>Inicio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>Hello world</h1>
+    <div>
+        <form method="POST" action="/person">
+            <span style="color:white">Firstname:</span> <input type="text" name="firstname"><br/>
+            <span style="color:white">Lastname: </span><input type="text" name="lastname"><br/>
+            <input value="Submit" type="submit"></input>
+        </form>
+    </div>
 </body>
 </html>
