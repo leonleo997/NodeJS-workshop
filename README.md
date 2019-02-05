@@ -1,6 +1,6 @@
 # NodeJS Course  
 Owner: Yesid Leonardo López Sierra  
-Link: [course NodeJS](https://www.udemy.com/understand-nodejs/)  
+Link: [Course NodeJS](https://www.udemy.com/understand-nodejs/)  
 Philosophy: Don't imitate, understand!  
 Not just focus on what, but how and why
 ## Big words  
@@ -69,4 +69,24 @@ In the code above the index html file is loaded completely, but below is loaded 
 ```javascript
     fs.createReadStream(__dirname + '/index.html', 'utf8').pipe(res);
 ```
+**API:** A set of tools for building a software aplication.  
+**Endpoint:** One OURL in a web API. Sometimes that endpoint does multiple choices based in the header.  
+## Express  
+It is a powerful web application framework for NodeJS. It is designed for building web applications and APIs. 
+### Routing  
+Match HTTP request to content. To get more information check: https://expressjs.com/en/guide/routing.html  
+
+### Midldeware  
+Code that sits between two layers of software. In Express, sitting between the request and the response.  
+**Static:** Not dynamic.  
+There are very interesting middlewares in the following link: https://expressjs.com/en/resources/middleware.html  
+
+### Templates using EJS  
+
+EJS is a simple templating language that lets you generate HTML markup with plain JavaScript. No religiousness about how to organize things. No reinvention of iteration and control-flow. It's just plain JavaScript.  
+
+Using `app.set('view engine', 'ejs');` allow us to change the extension of views. It means that when it has to find views it will search using the extention `.ejs`
+
+ **Note:** By default the views are located in the views folder
+
 
