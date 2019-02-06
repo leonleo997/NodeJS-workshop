@@ -1,13 +1,9 @@
+var bodyParser = require('body-parser');
+
 module.exports = function(app) {
 
     // create application/x-www-form-urlencoded parser
     var urlencodedParser = bodyParser.urlencoded({ extended: false });
-
-    // create application/json parser
-    var jsonParser = bodyParser.json()
-    
-    // The following will locate the folder in /Proyect_root/public as /assets
-    app.use('/assets', express.static(__dirname+"/public"));
 
     // This is a middleware example
     app.use('/', function(req, res, next) {

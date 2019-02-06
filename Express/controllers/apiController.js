@@ -4,7 +4,7 @@ module.exports = function(app) {
         //get data from the database
     });
 
-    app.post('/api/person', jsonParser, function(req, res){
+    app.post('/api/person', function(req, res){
         //Create or save to the database
     });
 
