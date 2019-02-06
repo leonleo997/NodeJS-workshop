@@ -5,15 +5,6 @@ module.exports = function(app) {
     // create application/x-www-form-urlencoded parser
     var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-    // This is a middleware example
-    app.use('/', function(req, res, next) {
-        console.log('ruta: ', req.url);
-        next();
-    });
-
-    // this is used to defined ejs as view extension
-    app.set('view engine', 'ejs');
-
     app.get('/', function(req, res){
         res.render('index')
     });
