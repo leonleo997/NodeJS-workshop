@@ -87,6 +87,27 @@ EJS is a simple templating language that lets you generate HTML markup with plai
 
 Using `app.set('view engine', 'ejs');` allow us to change the extension of views. It means that when it has to find views it will search using the extention `.ejs`
 
- **Note:** By default the views are located in the views folder
+**Note:** By default the views are located in the views folder. 
+ 
+### Querystring and post parameters  
+Querystrings are the string that are passed by parameter using [name variable] = [value], this name - value are separed by "?". Querystrings are used to get methods.  
+When we want to use parameters using post method we have to sent them through the body. For that we will use a middleware called [body-parser](https://expressjs.com/en/resources/middleware/body-parser.html).  
+### RESTdul APIS and JSON  
+REST: architectural style for building APIs. A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data.  
+They use GET to retrieve a resource; PUT to change the state of or update a resource, which can be an object, file or block; POST to create that resource; and DELETE to remove it.  
+* GET
+* POST
+* DELETE
+* PUT
+### Express application generator  
+It helps us to create an express application skeleton. To install it use: `npm install express-generator -g`.  
+## The MEAN Stack  
+**Stack:** It is a combination of technologies to create a piece of software.  
+### MEAN  
+**Mongo:** Stores your data in documents that look a lot like JSON and javascript object literal notation.  
+**Express:** Javascript framework that makes things like routing, writting APIs, and woking with HTTP easier.  
+**Angular:** Javascript framework for managing code and UI in the browser, removing a lot of manual work.  
+**NodeJS:** Javascript on the server. Handle HTTP requests and responses and lots more.
+ 
 
 
