@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-angular-test",
+  "version": "1.0.0",
+  "description": "Owner: Yesid Leonardo López Sierra  \r Link: [course NodeJS](https://www.udemy.com/understand-nodejs/)  \r Philosophy: Don't imitate, understand!  \r Not just focus on what, but how and why\r ## Description  \r Here you can find NodeJS and Angular integrated",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonleo997/NodeJS-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonleo997/NodeJS-workshop/issues"
+  },
+  "homepage": "https://github.com/leonleo997/NodeJS-workshop#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
